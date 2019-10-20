@@ -1,8 +1,6 @@
 package com.iremsena.bayiform;
 
 
-import java.util.Date;
-
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,12 +25,12 @@ public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Model model) {
 
-		Kullanicilar kullanici = new Kullanicilar();
-		kullanici.setName("Deneme");
-		kullanici.setBirth_day(new Date());
-		kullanici.setAdress("123");
+		//Kullanicilar kullanici = new Kullanicilar();
+		//kullanici.setName("Deneme");
+		//kullanici.setBirth_day(new Date());
+		//kullanici.setAdress("123");
 		
-		kullanicilarService.createKullanicilar(kullanici, null);
+		//kullanicilarService.createKullanicilar(kullanici, null);
 		
 		return "maiin";
 	}
@@ -64,7 +62,11 @@ public class HomeController {
 		return new ResponseEntity<> ("kaydýnýz alýndý", HttpStatus.CREATED);
 		
 	}
-	
+	@RequestMapping(value = "/success", method = RequestMethod.GET)
+	public String success(Model model) {
+
+		return "success";
+	}
 	
 	
 }

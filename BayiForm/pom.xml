@@ -227,11 +227,13 @@
              <url>http://localhost:8080/manager/text</url>
              <server>TomcatServer</server>
               <path>/BayiForm</path>
+              
+              
       <!-- Set update to true to avoid exist war package can not be override error -->
-              <update>true</update>
+          <update>true</update>
       <!-- Because deploy this maven project using plugin in pom so use the manager-script role user. -->
-             <username>tomcat</username>
-             <password>tomcat</password>
+           <username>tomcat</username>
+           <password>tomcat</password>
             </configuration>
            </plugin>
        

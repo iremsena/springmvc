@@ -50,7 +50,7 @@ public class KullanicilarDAO {
 
 	
 	//public ArrayList<kullanicilar> getAll(Long kullanici_id) {
-		//Query query = sessionFactory.getCurrentSession().createQuery("FROM kullanicilar WHERE user_id=:user_id")
-		 //.setLong("user_id", kullanici_id);
-		//return (ArrayList<kullanicilar>) query.getResultList();	} 
+	//Query query = sessionFactory.getCurrentSession().createQuery("FROM kullanicilar WHERE user_id=:user_id")
+	//.setLong("user_id", kullanici_id);
+	//return (ArrayList<kullanicilar>) query.getResultList();	} 
 }

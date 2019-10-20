@@ -18,7 +18,26 @@ function formpage() {
 			  
 	  }
 	  
-	  axios.post("formpage",param).then(function(response){alert(response)}).catch(function(e){alert(e)});
+	
+	  
+	 // axios.post("formpage",param).then(function(response){alert(response)}).catch(function(e){alert(e)});
+	
+	  
+	 
+	  
+	  
+	  
+	  axios.post("formpage", param).then( function(response) {
+		  
+		  if(param.name !="" && param.surname!="" && param.email!="" && param.tel!="" && param.tc!="" && param.adress!="" && param.birth_day!="" && param.ques1!="" && param.ques2!="" && param.ques3!="" && param.ques4!="" && param.ques5!="") {  
+		      	return window.location.href="/bayiform/success";}
+		  else return alert("Lütfen Boşlukları Doldurunuz")
+		 
+		  // window.location.href="/bayiform/success"
+		  })
+		.catch(function(e) {
+		    alert(e);
+		});
 	  
 //	  $.ajax({
 //		  type:"POST",

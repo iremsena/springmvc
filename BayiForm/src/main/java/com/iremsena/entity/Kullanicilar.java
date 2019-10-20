@@ -20,7 +20,7 @@ public class Kullanicilar {
 
 	
 	
-	@Column(nullable=false)
+	@Column
 	private String name;
 	private String surname;
 	private String  email;

@@ -15,8 +15,7 @@
 <style type="text/css">
 	
 		body {
-		    background-color: LightSteelBlue;
-		    background-image: url("1.jpg");
+		   
 		    background-attachment: fixed;
 		    background-size: cover;
 		    font-family: 'Roboto', sans-serif;
